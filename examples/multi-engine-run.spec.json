@@ -1,0 +1,27 @@
+{
+  "goal": "Audit the target workspace for one concrete improvement, implement it, and verify the result.",
+  "workspace": "./my-service",
+  "constraints": [
+    "Keep changes tightly scoped.",
+    "Do not expose secrets or auth files.",
+    "Do not modify deployment or release configuration."
+  ],
+  "success_criteria": [
+    "The intended change is complete.",
+    "Relevant local checks are run when practical.",
+    "The final report clearly states what changed and what was verified."
+  ],
+  "allow_write": true,
+  "max_subjobs": 3,
+  "timeout_minutes": 20,
+  "engine": "agy",
+  "planning_engine": "agy",
+  "review_engine": "auto",
+  "allowed_engines": ["agy", "claude", "codex"],
+  "fallback_engines": [],
+  "model": "strongest",
+  "effort": "highest",
+  "report_format": "full",
+  "review_pass_limit": 2,
+  "max_accounts_per_engine": 20
+}

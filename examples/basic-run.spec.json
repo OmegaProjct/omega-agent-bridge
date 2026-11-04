@@ -1,0 +1,19 @@
+{
+  "goal": "Review the target workspace, make one bounded improvement, and report the result.",
+  "workspace": ".",
+  "constraints": [
+    "Keep changes tightly scoped.",
+    "Do not expose secrets or auth files."
+  ],
+  "success_criteria": [
+    "The intended change is complete.",
+    "Relevant local checks are run when practical.",
+    "The final report clearly states what changed."
+  ],
+  "allow_write": true,
+  "max_subjobs": 3,
+  "timeout_minutes": 20,
+  "model": "strongest",
+  "effort": "highest",
+  "report_format": "full"
+}
